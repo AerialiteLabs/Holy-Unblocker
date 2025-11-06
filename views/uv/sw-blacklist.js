@@ -1,6 +1,6 @@
-importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.bundle.js');
-importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.config.js');
-importScripts(self['{{__uv$config}}'].sw || 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.sw.js');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/uv.bundle.js');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/uv.config.js');
+importScripts(self['{{__uv$config}}'].sw || 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/uv.sw.js');
 
 /*
 
@@ -32,7 +32,7 @@ const uv = new UVServiceWorker();
 
 // Get list of blacklisted domains.
 const blacklist = {};
-fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/blacklist.json').then((request) => {
+fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/json/blacklist.json').then((request) => {
   request.json().then((jsonData) => {
     // Organize each domain by their tld (top level domain) ending.
     jsonData.forEach((domain) => {

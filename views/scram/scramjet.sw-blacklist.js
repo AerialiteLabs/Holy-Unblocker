@@ -5,7 +5,7 @@ const scramjet = new ScramjetServiceWorker();
 //  Get list of blacklisted domains.
 const blacklist = {},
   nativeFunction = Function;
-fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/blacklist.json').then((request) => {
+fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/json/blacklist.json').then((request) => {
   request.json().then((jsonData) => {
     // Organize each domain by their tld (top level domain) ending.
     jsonData.forEach((domain) => {

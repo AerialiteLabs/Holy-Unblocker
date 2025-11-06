@@ -1,9 +1,9 @@
 (() => {
   const swRoutes = {
-      uv: ['https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw.js', 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw-blacklist.js'],
+      uv: ['https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/sw.js', 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/sw-blacklist.js'],
       sj: [
-        'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw.js',
-        'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw-blacklist.js'
+        'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/scram/scramjet.sw.js',
+        'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/scram/scramjet.sw-blacklist.js'
       ],
     },
     swAllowedHostnames = ['localhost', '127.0.0.1'],

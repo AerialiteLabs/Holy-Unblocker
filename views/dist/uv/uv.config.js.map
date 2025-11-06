@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["uv.config.js"],
-  "sourcesContent": ["// This file overwrites the stock UV config.js\n\nself['g6\th39n]2Dl1<H4Q\\nZ3Sr%1'] = {\n  prefix: '/uv/service/',\n  encodeUrl: Ultraviolet.codec.xor.encode,\n  decodeUrl: Ultraviolet.codec.xor.decode,\n  handler: 'https://cdn.jsdelivr.net/gh/AerialiteLabs/holy-unblocker@6.9.3/views/uv/uv.handler.js',\n  client: '/uv/uv.client.js',\n  bundle: '/uv/uv.bundle.js',\n  config: '/uv/uv.config.js',\n  sw: '/uv/uv.sw.js',\n};\n"],
+  "sourcesContent": ["// This file overwrites the stock UV config.js\n\nself['g6\th39n]2Dl1<H4Q\\nZ3Sr%1'] = {\n  prefix: '/uv/service/',\n  encodeUrl: Ultraviolet.codec.xor.encode,\n  decodeUrl: Ultraviolet.codec.xor.decode,\n  handler: 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/uv.handler.js',\n  client: '/uv/uv.client.js',\n  bundle: '/uv/uv.bundle.js',\n  config: '/uv/uv.config.js',\n  sw: '/uv/uv.sw.js',\n};\n"],
   "mappings": "MAEA,KAAK;AAAA,OAA0B,EAAI,CACjC,OAAQ,eACR,UAAW,YAAY,MAAM,IAAI,OACjC,UAAW,YAAY,MAAM,IAAI,OACjC,QAAS,oBACT,OAAQ,mBACR,OAAQ,mBACR,OAAQ,mBACR,GAAI,cACN",
   "names": []
 }

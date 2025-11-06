@@ -669,7 +669,7 @@ const preparePage = async () => {
           sjLoaded = false;
         if (sjObject) {
           autocompleteChannel = new MessageChannel();
-          callAfterWorkers(['https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw.js'], (worker) => {
+          callAfterWorkers(['https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/scram/scramjet.sw.js'], (worker) => {
             worker.active.postMessage({ type: 'requestAC' }, [
               autocompleteChannel.port2,
             ]);
@@ -794,9 +794,9 @@ const preparePage = async () => {
     if (uvConfig && sjObject)
       (await callAfterWorkers(
         [
-          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw.js',
-          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw.js',
-          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw-blacklist.js',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/scram/scramjet.sw.js',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/sw.js',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/uv/sw-blacklist.js',
         ],
         loadFrame,
         2,
@@ -839,7 +839,7 @@ const preparePage = async () => {
       AOS.init();
     });
 
-    fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/splash.json', {
+    fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/json/splash.json', {
       mode: 'same-origin',
     }).then((response) => {
       response.json().then((splashList) => {
@@ -851,7 +851,7 @@ const preparePage = async () => {
 
   // Load in relevant JSON files used to organize large sets of data.
   // This first one is for links, whereas the rest are for navigation menus.
-  fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/links.json', {
+  fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/json/links.json', {
     mode: 'same-origin',
   }).then((response) => {
     response.json().then((huLinks) => {
@@ -875,7 +875,7 @@ const preparePage = async () => {
 
     if (navList) {
       // List items stored in JSON format will be returned as a JS object.
-      const data = await fetch(`https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/${filename}.json`, {
+      const data = await fetch(`https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/json/${filename}.json`, {
         mode: 'same-origin',
       }).then((response) => response.json());
 
@@ -914,7 +914,7 @@ const preparePage = async () => {
               (credits = document.createElement('p')));
 
             a.href = '#';
-            img.src = `https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/img/${dir}/` + item.img;
+            img.src = `https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/dist/assets/img/${dir}/` + item.img;
             title.textContent = item.name;
             desc.textContent = item.description;
             credits.textContent = item.credits;
