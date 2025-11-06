@@ -1,6 +1,6 @@
-importScripts('{{route}}{{/uv/uv.bundle.js}}');
-importScripts('{{route}}{{/uv/uv.config.js}}');
-importScripts(self['{{__uv$config}}'].sw || '{{route}}{{/uv/uv.sw.js}}');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.bundle.js');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.config.js');
+importScripts(self['{{__uv$config}}'].sw || 'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.sw.js');
 
 const uv = new UVServiceWorker();
 

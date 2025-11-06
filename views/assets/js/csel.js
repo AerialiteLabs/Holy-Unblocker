@@ -218,7 +218,7 @@ if (document.getElementById('csel')) {
       //    Allow users to reset the favicon to default if nothing is entered.
       focusElement.focus();
       removeStorage('Icon');
-      pageIcon('{{route}}{{assets/ico/favicon.ico}}');
+      pageIcon('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/ico/favicon.ico');
     }
   });
 

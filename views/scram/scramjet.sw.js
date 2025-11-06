@@ -1,4 +1,4 @@
-importScripts('{{route}}{{/scram/scramjet.all.js}}');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.all.js');
 const { ScramjetServiceWorker } = $scramjetLoadWorker();
 const scramjet = new ScramjetServiceWorker();
 

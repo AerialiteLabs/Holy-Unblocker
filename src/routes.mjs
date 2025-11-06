@@ -101,7 +101,7 @@ let externalPages = {
   'tor-project': 'https://tb-manual.torproject.org/installation',
   'titaniumnetwork-documentation': 'https://docs.titaniumnetwork.org',
   'patreon': 'https://www.patreon.com/holyunblockerlts',
-  'titaniumnetwork-discord': 'https://discord.gg/CwWpdGkuWY',
+  'titaniumnetwork-discord': 'https://discord.gg/unblock',
   'truffled': 'https://truffled.lol',
   'rammerhead-discord': 'https://discord.gg/VNT4E7gN5Y',
 };

@@ -20,8 +20,8 @@ const getDomain = () =>
   // This is used for stealth mode when visiting external sites.
   goFrame = (url) => {
     localStorage.setItem('{{hu-lts}}-frame-url', url);
-    if (location.pathname !== '{{route}}{{/s}}')
-      location.href = '{{route}}{{/s}}?cache={{cacheVal}}';
+    if (location.pathname !== '{{route}}{{/pages/frame.html}}')
+      location.href = '{{route}}{{/pages/frame.html}}?cache={{cacheVal}}';
     else document.getElementById('frame').src = url;
   },
   /* Used to set functions for the goProx object at the bottom.
@@ -669,7 +669,7 @@ const preparePage = async () => {
           sjLoaded = false;
         if (sjObject) {
           autocompleteChannel = new MessageChannel();
-          callAfterWorkers(['{{route}}{{/scram/scramjet.sw.js}}'], (worker) => {
+          callAfterWorkers(['https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw.js'], (worker) => {
             worker.active.postMessage({ type: 'requestAC' }, [
               autocompleteChannel.port2,
             ]);
@@ -794,9 +794,9 @@ const preparePage = async () => {
     if (uvConfig && sjObject)
       (await callAfterWorkers(
         [
-          '{{route}}{{/scram/scramjet.sw.js}}',
-          '{{route}}{{/uv/sw.js}}',
-          '{{route}}{{/uv/sw-blacklist.js}}',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/scram/scramjet.sw.js',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw.js',
+          'https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/sw-blacklist.js',
         ],
         loadFrame,
         2,
@@ -839,7 +839,7 @@ const preparePage = async () => {
       AOS.init();
     });
 
-    fetch('{{route}}{{/assets/json/splash.json}}', {
+    fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/splash.json', {
       mode: 'same-origin',
     }).then((response) => {
       response.json().then((splashList) => {
@@ -851,7 +851,7 @@ const preparePage = async () => {
 
   // Load in relevant JSON files used to organize large sets of data.
   // This first one is for links, whereas the rest are for navigation menus.
-  fetch('{{route}}{{/assets/json/links.json}}', {
+  fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/links.json', {
     mode: 'same-origin',
   }).then((response) => {
     response.json().then((huLinks) => {
@@ -875,7 +875,7 @@ const preparePage = async () => {
 
     if (navList) {
       // List items stored in JSON format will be returned as a JS object.
-      const data = await fetch(`{{route}}{{/assets/json/}}${filename}.json`, {
+      const data = await fetch(`https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/${filename}.json`, {
         mode: 'same-origin',
       }).then((response) => response.json());
 
@@ -914,7 +914,7 @@ const preparePage = async () => {
               (credits = document.createElement('p')));
 
             a.href = '#';
-            img.src = `{{route}}{{/assets/img/}}${dir}/` + item.img;
+            img.src = `https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/img/${dir}/` + item.img;
             title.textContent = item.name;
             desc.textContent = item.description;
             credits.textContent = item.credits;
@@ -922,7 +922,7 @@ const preparePage = async () => {
             if (filename === 'par-nav') {
               if (item.credits === 'truf')
                 desc.innerHTML +=
-                  '<br>{{mask}}{{Credits: Check out the full site at }}<a target="_blank" href="{{route}}{{/truffled}}">{{mask}}{{truffled.lol}}</a> //{{mask}}{{ discord.gg/vVqY36mzvj}}';
+                  '<br>{{mask}}{{Credits: Check out the full site at }}<a target="_blank" href="https://truffled.lol">{{mask}}{{truffled.lol}}</a> //{{mask}}{{ discord.gg/vVqY36mzvj}}';
             }
 
             a.appendChild(img);
@@ -937,7 +937,7 @@ const preparePage = async () => {
               // emulib-nav
               () =>
                 goFrame(
-                  '{{route}}{{/webretro}}?core=' +
+                  '{{route}}{{/archive/gfiles/rarch/index.html}}?core=' +
                     item.core +
                     '&rom=' +
                     item.rom
@@ -976,7 +976,7 @@ const preparePage = async () => {
 
             a.addEventListener('click', (e) => {
               e.preventDefault();
-              goFrame('{{route}}{{/flash}}?swf=' + item);
+              goFrame('{{route}}{{/archive/gfiles/flash/index.html}}?swf=' + item);
             });
 
             navList.appendChild(a);

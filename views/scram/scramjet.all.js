@@ -321,7 +321,7 @@ ${l}`}}if((0,n.U5)("rewriterLogs",r.base))for(let e of o.errors)console.error("o
                         issues.}}
                         </li>
                         <li>
-                        {{mask}}{{Troubleshooting the error on the }}<a href="{{route}}{{/github/scramjet}}" target="_blank">{{mask}}{{Scramjet GitHub.}}</a>
+                        {{mask}}{{Troubleshooting the error on the }}<a href="https://github.com/MercuryWorkshop/scramjet">{{mask}}{{Scramjet GitHub.}}</a>
                         </li>
                         <li>
                         {{mask}}{{Try a different proxy engine via the settings panel.}}

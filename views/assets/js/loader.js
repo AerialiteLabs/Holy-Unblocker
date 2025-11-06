@@ -189,7 +189,7 @@
                               elementCopy.addEventListener('click', (event) => {
                                 event.preventDefault();
                                 if (attrValue === '{{route}}{{/}}')
-                                  attrValue = '{{route}}{{/index}}';
+                                  attrValue = '{{route}}{{/index.html}}';
                                 loadPage(new URL(attrValue, origin))();
                               });
                             else if (nodeName === 'link') {

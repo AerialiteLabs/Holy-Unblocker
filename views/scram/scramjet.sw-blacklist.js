@@ -1,11 +1,11 @@
-importScripts('{{route}}{{/scram/scramjet.all.js}}');
+importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.all.js');
 const { ScramjetServiceWorker } = $scramjetLoadWorker();
 const scramjet = new ScramjetServiceWorker();
 
 //  Get list of blacklisted domains.
 const blacklist = {},
   nativeFunction = Function;
-fetch('{{route}}{{/assets/json/blacklist.json}}').then((request) => {
+fetch('https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/json/blacklist.json').then((request) => {
   request.json().then((jsonData) => {
     // Organize each domain by their tld (top level domain) ending.
     jsonData.forEach((domain) => {

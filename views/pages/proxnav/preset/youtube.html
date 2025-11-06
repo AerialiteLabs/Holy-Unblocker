@@ -10,20 +10,18 @@
     }}
     <!--HEAD-CONTENT-->
     <script src="https://unpkg.com/tsparticles@3.8.1/tsparticles.bundle.min.js" defer data-module></script>
-    <script src="{{route}}{{/scram/scramjet.all.js}}" defer data-module></script>
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/scramjet-static@latest/dist/scramjet.all.js" defer data-module></script>
     <script src="{{route}}{{/baremux/index.js}}" defer data-module></script>
-    <script src="{{route}}{{/epoxy/index.js}}" defer data-module></script>
-    <script src="{{route}}{{/uv/uv.bundle.js}}" defer data-module></script>
-    <script src="{{route}}{{/uv/uv.config.js}}" defer data-module></script>
-    {{inline}}{{
-    <script src="{{route}}{{/assets/js/register-sw.js}}{{inline}}" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mercuryworkshop/epoxy-transport/dist/index.js" defer data-module></script>
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.bundle.js" defer data-module></script>
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/uv/uv.config.js" defer data-module></script>
+    {{
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/register-sw.js" defer></script>
     }}
     <script src="https://unpkg.com/@popperjs/core@2" defer data-module></script>
     <script src="https://unpkg.com/tippy.js@6" defer></script>
-    {{inline}}{{
-    <script src="{{route}}{{assets/js/csel.js}}{{inline}}" defer></script>
-    <script src="{{route}}{{assets/js/common.js}}{{inline}}" defer></script>
-    }}
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/csel.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/common.js" defer></script>
   </head>
 
   <body>
@@ -47,7 +45,7 @@
               you are self-hosting however feel free.}}
             </p><br />{{mask}}{{Please do CTRL+Shift+Del if you have any
             issues.}}<br />View the
-            <a href="{{route}}{{/questions}}">FAQ</a> {{mask}}{{page if you have
+            <a href="{{route}}{{/faq.html}}">FAQ</a> {{mask}}{{page if you have
             any issues with the proxy.}}
           </div>
           <div class="proxy-form text-center">
@@ -68,8 +66,8 @@
       <!--FOOTER-->
     </div>
     <!-- IMPORTANT-HUCOOKINGINSERT-DONOTDELETE -->
-    {{inline}}{{
-    <script src="{{route}}{{assets/js/card.js}}{{inline}}"></script>
+    {{
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/card.js"></script>
     }}
   </body>
 </html>

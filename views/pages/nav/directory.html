@@ -20,10 +20,8 @@
     />
     <script src="https://unpkg.com/@popperjs/core@2" defer data-module></script>
     <script src="https://unpkg.com/tippy.js@6" defer></script>
-    {{inline}}{{
-    <script src="{{route}}{{assets/js/csel.js}}{{inline}}" defer></script>
-    <script src="{{route}}{{assets/js/common.js}}{{inline}}" defer></script>
-    }}
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/csel.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/js/common.js" defer></script>
   </head>
 
   <body>
@@ -39,7 +37,7 @@
         <div class="box-image-container">
           <img
             class="box-pr-logo"
-            src="{{route}}{{/assets/img/directory_splash.webp}}"
+            src="https://cdn.jsdelivr.net/gh/AerialiteLabs/Holy-Unblocker@6.9.3/views/assets/img/directory_splash.webp"
             {{ifSEO}}{{
             alt="Holy Unblocker Browsing Splash"
             }}
@@ -64,28 +62,28 @@
           <div class="box-button-container">
             <a
               id="emtooltip"
-              href="{{route}}{{/emulators}}"
+              href="{{route}}{{/pages/nav/emulators.html}}"
               class="box-button tippy-button"
               data-tippy-content="{{mask}}{{Emulators [Webretro v6.5]: Fully ported RetroArch with over 20 emulators featured!}}"
               >{{mask}}{{Emulators}}</a
             >
             <a
               id="eltooltip"
-              href="{{route}}{{/retro-games}}"
+              href="{{route}}{{/pages/nav/emulibrary.html}}"
               class="box-button tippy-button"
               data-tippy-content="{{mask}}{{EmuLibrary [Collection]: Popular collection of games sourced from other websites. You can set this via the settings menu.}}"
               >{{mask}}{{EmuLibrary}}</a
             >
             <a
               id="wgtooltip"
-              href="{{route}}{{/web-games}}"
+              href="{{route}}{{/pages/nav/games5.html}}"
               class="box-button tippy-button"
               data-tippy-content="{{mask}}{{Web Games [Collection]: Collection of popular web games, including WebGL and HTML5 games.}}"
               >{{mask}}{{Web Games}}</a
             >
             <a
               id="fgtooltip"
-              href="{{route}}{{/flash-games}}"
+              href="{{route}}{{/archive/gfiles/flash/index.html-games}}"
               class="box-button tippy-button"
               data-tippy-content="{{mask}}{{Flash Games [Collection]: Collection of Flash games emulated via Ruffle.}}"
               >{{mask}}{{Flash Games}}</a
