@@ -7,11 +7,7 @@
       ],
     },
     swAllowedHostnames = ['localhost', '127.0.0.1'],
-    wispUrl =
-      (location.protocol === 'https:' ? 'wss' : 'ws') +
-      '://' +
-      location.host +
-      '{{route}}{{/wisp/}}',
+    wispUrl = "wss://gointospace.app/wisp/", // amplify's poor wisp server
     proxyUrl = {
       tor: 'socks5h://localhost:9050',
       eu: 'socks5h://localhost:7000',
