@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Webretro Collection",
+    "path": "/archive/gfiles/rarch/index.html",
+    "img": "genesis.webp"
+  },
+  {
+    "name": "GBA Emulator",
+    "path": "/archive/gfiles/rarch/index.html?core=mgba",
+    "img": "gba.webp"
+  },
+  {
+    "name": "NES Emulator",
+    "path": "/archive/gfiles/rarch/index.html?core=nestopia",
+    "img": "nes.webp"
+  },
+  {
+    "name": "SNES Emulator",
+    "path": "/archive/gfiles/rarch/index.html?core=snes9x",
+    "img": "snes.webp"
+  },
+  {
+    "name": "N64 Emulator",
+    "path": "/archive/gfiles/rarch/index.html?core=mupen64plus_next",
+    "img": "nintendo64.webp"
+  }
+]

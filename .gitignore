@@ -11,7 +11,6 @@ lib/rammerhead/sessions/*
 !lib/rammerhead/sessions/.gitkeep
 lib/rammerhead/cache-js/*
 !lib/rammerhead/cache-js/.gitkeep
-views/dist/*
 src/.shutdown
 lib/rammerhead/src/client/hammerhead.min.js
 lib/rammerhead/src/client/rammerhead.min.js

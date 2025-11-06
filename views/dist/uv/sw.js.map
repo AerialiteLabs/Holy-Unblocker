@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["sw.js"],
+  "sourcesContent": ["importScripts('https://cdn.jsdelivr.net/gh/AerialiteLabs/holy-unblocker@6.9.3/views/uv/uv.bundle.js');\nimportScripts('/uv/uv.config.js');\nimportScripts(self['g6\th39n]2Dl1<H4Q\\nZ3Sr%1'].sw || '/uv/uv.sw.js');\n\nconst uv = new UVServiceWorker();\n\nself.addEventListener('fetch', (event) => {\n  event.respondWith(\n    (async () => {\n      if (uv.route(event)) return await uv.fetch(event);\n\n      return await fetch(event.request);\n    })()\n  );\n});\n"],
+  "mappings": "MAAA,cAAc,kBAAkB,EAChC,cAAc,kBAAkB,EAChC,cAAc,KAAK;AAAA,OAA0B,EAAE,IAAM,cAAc,EAEnE,IAAMA,EAAK,IAAI,gBAEf,KAAK,iBAAiB,QAAUC,GAAU,CACxCA,EAAM,aACH,SACKD,EAAG,MAAMC,CAAK,EAAU,MAAMD,EAAG,MAAMC,CAAK,EAEzC,MAAM,MAAMA,EAAM,OAAO,GAC/B,CACL,CACF,CAAC",
+  "names": ["uv", "event"]
+}
